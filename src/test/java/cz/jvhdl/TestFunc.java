@@ -9,8 +9,6 @@
  */
 package cz.jvhdl;
 
-import cz.jvhdl.ProcessVhdl;
-
 /**
  * @author Martin Janyš
  */

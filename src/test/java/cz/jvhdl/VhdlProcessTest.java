@@ -7,10 +7,6 @@ package cz.jvhdl;
 import cz.jvhdl.datatypes.EnumVhdl;
 import cz.jvhdl.datatypes.VariableVhdl;
 import cz.jvhdl.datatypes.SignalVhdl;
-import cz.jvhdl.VHDL;
-import cz.jvhdl.ExprVhdl;
-import cz.jvhdl.ConditionVhdl;
-import cz.jvhdl.ProcessVhdl;
 import cz.jvhdl.datatypes.std.StdLogicVhdl;
 import cz.jvhdl.examples.VhdlMooreExample;
 import cz.jvhdl.exception.InvalidVhdlTypeException;
@@ -29,6 +25,7 @@ public class VhdlProcessTest {
 
     @BeforeClass
     public static void setUpClass() {
+        ObjectVhdl.indent = "  ";
     }
 
     @AfterClass

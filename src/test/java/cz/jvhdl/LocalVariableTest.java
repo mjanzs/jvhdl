@@ -4,7 +4,6 @@
  */
 package cz.jvhdl;
 
-import cz.jvhdl.VHDL;
 import cz.jvhdl.datatypes.ArrayVhdl;
 import cz.jvhdl.datatypes.DataTypeVhdl;
 import cz.jvhdl.exception.InvalidVhdlTypeException;
@@ -13,7 +12,6 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 import static cz.jvhdl.datatypes.DataTypeVhdl.DataUnit.*;
 import static cz.jvhdl.datatypes.DataTypeVhdl.Direction.*;
 import cz.jvhdl.datatypes.SignalVhdl;
@@ -32,6 +30,7 @@ public class LocalVariableTest {
 
     @BeforeClass
     public static void setUpClass() {
+        ObjectVhdl.indent = "  ";
     }
 
     @AfterClass

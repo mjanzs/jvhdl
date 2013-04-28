@@ -4,8 +4,6 @@
  */
 package cz.jvhdl;
 
-import cz.jvhdl.ExprVhdl;
-import cz.jvhdl.WithSelectVhdl;
 import cz.jvhdl.datatypes.DataTypeVhdl;
 import cz.jvhdl.datatypes.SignalVhdl;
 import cz.jvhdl.datatypes.std.StdLogicVhdl;
@@ -28,6 +26,7 @@ public class WithSelectVhdlTest {
 
     @BeforeClass
     public static void setUpClass() {
+        ObjectVhdl.indent = "  ";
     }
 
     @AfterClass
