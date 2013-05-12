@@ -64,7 +64,7 @@ public class LocalVariableTest {
                 + "\n"
                 + "begin\n"
                 + "  -- process p\n"
-                + "  p: process()\n"
+                + "  p: process\n"
                 + "\n"
                 + "    type data is array (7 to 0) of word;\n"
                 + "    variable sel : STD_LOGIC_VECTOR(1 DOWNTO 0);\n"

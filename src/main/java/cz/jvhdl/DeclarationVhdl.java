@@ -54,8 +54,8 @@ public class DeclarationVhdl extends BlockCodeVhdl implements Iterable<DataTypeV
     }
 
     /**
-     *
-     * @return
+     * 
+     * @return True if there is no declaration
      */
     public boolean isEmpty() {
         return this.types.isEmpty();

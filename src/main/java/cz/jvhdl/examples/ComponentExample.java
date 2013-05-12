@@ -10,7 +10,7 @@ import cz.jvhdl.VHDL;
 
 /**
  *
- * @author Martin
+ * @author Martin Janyš
  */
 public class ComponentExample  extends VHDL {
 

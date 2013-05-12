@@ -265,16 +265,18 @@ public class ProcessVhdl extends BlockCodeRecursiveVhdl {
         sb.append(indent()).append(commentStart());
 
         // id : process( sensitive list )
-        sb.append(indent()).append(this.id).append(": process(");
+        sb.append(indent()).append(this.id).append(": process");
         if (this.sensitivityList != null && this.sensitivityList.size() > 0) {
+            sb.append("(");
             for (Object s : this.sensitivityList) {
                 sb.append(s.toString());
                 sb.append(", ");
             }
             int index = sb.lastIndexOf(",");
             sb.delete(index, index + 2);
+            sb.append(")");
         }
-        sb.append(")\n");
+        sb.append("\n");
 
         // dcl list
         sb.append(getLocalVariablesString(indent()));

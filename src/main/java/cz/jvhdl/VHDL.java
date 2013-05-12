@@ -35,7 +35,6 @@ import cz.jvhdl.vdhdlgenerator.VhdlGenerator;
  *
  * From DataLayerVhdl inherits key methods and attributes for building code.
  *
- * @see DataLayerVhdl
  *
  * @author Martin Janyš
  */
@@ -202,7 +201,7 @@ public class VHDL extends BlockCodeRecursiveVhdl {
     /**
      * Declare vhdl port map.
      *
-     * @param id Identificator of port map
+     * @param entity 
      *
      * @return Created map
      */
@@ -213,14 +212,6 @@ public class VHDL extends BlockCodeRecursiveVhdl {
         return e;
     }
 
-    /**
-     * Declare vhdl port map.
-     *
-     * @param id Identificator of port map
-     * @param values Map with values
-     *
-     * @return Created map
-     */
     @Deprecated
     public EntityVhdl Component(EntityVhdl entity,
             Map<String, String> values, boolean standalone) {
@@ -545,7 +536,7 @@ public class VHDL extends BlockCodeRecursiveVhdl {
     /**
      * Starts case code block.
      *
-     * @see SwitchVhdl
+     * @see CaseVhdl
      * @see ProcessVhdl
      *
      * @param s Signal of condition
@@ -560,7 +551,7 @@ public class VHDL extends BlockCodeRecursiveVhdl {
     /**
      * Ends cases code block.
      *
-     * @see SwitchVhdl
+     * @see CaseVhdl
      * @see ProcessVhdl
      *
      * @throws SyntaxErrorVhdl
